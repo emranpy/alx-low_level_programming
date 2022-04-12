@@ -1,6 +1,2 @@
-# Recursion
+I am working on my c program :- project 0x08 - recursion
 
-What is recursion
-How to implement recursion
-In what situations you should implement recursion
-In what situations you shouldn’t implement recursion

@@ -1,56 +1,72 @@
-#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * op_add - addition operator
- * @a: first int
- * @b: second int
- * Return: sum of 2 numbers
+ * op_add - addition
+ * @a: sumnd 1
+ * @b: sumnd 2
+ * Return: rsult
  */
+
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
- * op_sub - subtraction operator
- * @a: first in
- * @b: second int
- * Return: difference of 2 numbers
+ * op_sub - subtraction
+ * @a: minuend
+ * @b: sustrnd
+ * Return: result
  */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul - product of 2 numbers
- * @a: first int
- * @b: second int
- * Return: product of the numbers
+ * op_mul - multiplication
+ * @a: multp 1
+ * @b: multp 2
+ * Return: result
  */
+
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * op_div - division of 2 numbers
- * @a: first int
- * @b: second int
- * Return: result of the division of the numbers
+ * op_div - division
+ * @a: divisr
+ * @b: dividndo
+ * Return: reult
  */
+
 int op_div(int a, int b)
 {
-	return (a / b);
+	if (b)
+	{
+		return (a / b);
+	}
+	printf("Error\n");
+	exit(100);
 }
 
 /**
- * op_mod - get remainder of the division of 2 numbers
- * @a: first int
- * @b: second int
- * Return: remainder of division of the numbers
+ * op_mod - modulo
+ * @a: vaper 1
+ * @b: vaper 2
+ * Return: result
  */
+
 int op_mod(int a, int b)
 {
-	return (a % b);
+	if (b)
+	{
+		return (a % b);
+	}
+	printf("Error\n");
+	exit(100);
 }

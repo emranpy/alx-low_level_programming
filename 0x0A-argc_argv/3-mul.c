@@ -1,21 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - print the result of the multiplication, followed by a new line
- * @argc: int
- * @argv: list
+ * main - multiplies two numbers
+ * @argc: n args
+ * @argv: arr args
  * Return: 0
  */
-
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-(void)argc;
+	int i, val = 1;
 
-if (argc != 3)
-{
-	printf("Error\n");
-	return (1);
-}
-printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
-return (0);
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	for (i = 1; i < argc; i++)
+	{
+		val *= atoi(argv[i]);
+	}
+	printf("%d\n", val);
+	return (0);
 }

@@ -1,1 +1,1 @@
-# Learn Struct and Typedef
+C-Structures, typedef

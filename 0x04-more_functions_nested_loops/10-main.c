@@ -5,6 +5,8 @@
  *
  * Return: Always 0.
  */
+void print_triangle(int size);
+
 int main(void)
 {
     print_triangle(2);
