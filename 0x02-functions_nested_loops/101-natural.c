@@ -1,43 +1,25 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - sums 3-5_cous - Entry point
- *
- * Return:  (0)
+ * main - main block
+ * Description: computes and prints the sum of all the multiples of 3 or
+ * 5 below 1024 (excluded), followed by a new line
+ * Return: 0
  */
-
 int main(void)
 {
-	int i = 0;
-	int m3 = 3;
-	int m5 = 5;
+	int c = 0;
 	int sum = 0;
-	int lim = 1024;
 
-	while (i == 0)
+	while (c < 1024)
 	{
-
-		if (m3 < lim)
+		if (c % 3 == 0 || c % 5 == 0)
 		{
-			sum += m3;
-			m3 += 3;
+			sum += c;
 		}
 
-		if (m5 < lim && (m5 % 3) != 0)
-		{
-			sum += m5;
-			m5 += 5;
-		}
-		else if (m5 % 3 == 0)
-		{
-			m5 += 5;
-		}
-
-		if (m3 >= lim && m5 >= lim)
-		{
-			i = 1;
-		}
+		c++;
 	}
-	printf("%d\n", sum);
+	printf("%i\n", sum);
 	return (0);
 }

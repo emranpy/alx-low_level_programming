@@ -1,26 +1,50 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer
- *
- * Return: Always 0.
+ * Return:void
  */
 
 void jack_bauer(void)
 {
-	int hr;
-	int min;
 
-	for (hr = 0; hr < 24; hr++)
+int h1;
+int h2;
+int m1;
+int m2;
+int a = 9;
+
+h2 = 0;
+while (h2 <= 2)
+{
+	if (h2 == 2)
 	{
-		for (min = 0; min < 60; min++)
-		{
-			_putchar((hr / 10) + '0');
-			_putchar((hr % 10) + '0');
-			_putchar(':');
-			_putchar((min / 10) + '0');
-			_putchar((min % 10) + '0');
-			_putchar('\n');
-		}
+		/*Restrain to 23h, not 29*/
+		a = 3;
 	}
+	h1 = 0;
+	while (h1 <= a)
+	{
+		m2 = 0;
+		while (m2 <= 5)
+		{
+			m1 = 0;
+			while (m1 <= 9)
+			{
+				_putchar('0' + h2);
+				_putchar('0' + h1);
+				_putchar(':');
+				_putchar('0' + m2);
+				_putchar('0' + m1);
+				_putchar('\n');
+				m1++;
+			}
+			m2++;
+		}
+		h1++;
+	}
+	h2++;
 }
+
+}
+

@@ -1,13 +1,13 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * add - adds two integers and returns the result
- * @a: an integer to add to b
- * @b: an integer to add to a
- * Return: Void.
+ * add - returns the sum of its parameters
+ * @a: int type number
+ * @b: int type number
+ * Return:0
  */
+
 
 int add(int a, int b)
 {
-	return (a + b);
+return (a + b);
 }
-
