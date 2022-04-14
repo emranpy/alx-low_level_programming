@@ -1,14 +1,15 @@
-gcc - GNU compiler collection, mostly used to compile c,c++ object-c go and d programs.
+# 0x04. C - More functions, more nested loops
 
-options;-
--Wall :- his enables all the warnings about constructions that some users consider questionable, and that are easy to avoid (or modify to prevent the warning), even in conjunction with macros
--Werror:-Make all warnings into errors.
--pendantic :-its warnings are also disabled in the expression that follows __extension__. However, only system header files should use these escape routes; application programs should avoid them
--Wextra :- This enables some extra warning flags that are not enabled by -Wall. (This option used to be called -W. The older name is still supported, but the newer name is more descriptive.).Its also used to prints warning messages for the following cases:
-
-A pointer is compared against integer zero with <, <=, >, or >=.
-(C++ only) An enumerator and a non-enumerator both appear in a conditional expression.
-(C++ only) Ambiguous virtual bases.
-(C++ only) Subscripting an array that has been declared register.
-(C++ only) Taking the address of a variable that has been declared register.
-(C++ only) A base class is not initialized in the copy constructor of a derived class.
+- 0-isupper.c - a function that checks for uppercase character.
+- 1-isdigit.c - a function that checks for a digit (0 through 9).
+- 2-mul.c - a function that multiplies two integers.
+- 3-print_numbers.c - a function that prints the numbers, from 0 to 9, followed by a new line.
+- 4-print_most_numbers.c - a function that prints the numbers, from 0 to 9, followed by a new line.
+- 5-more_numbers.c - a function that prints 10 times the numbers, from 0 to 14, followed by a new line.
+- 6-print_line.c - a function that draws a straight line in the terminal.
+- 7-print_diagonal.c - a function that draws a diagonal line on the terminal.
+- 8-print_square.c - a function that prints a square, followed by a new line.
+- 9-fizz_buzz.c - a program that prints the numbers from 1 to 100, followed by a new line. But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.
+- 10-print_triangle.c - a function that prints a triangle, followed by a new line.
+- 100-prime_factor.c - a program that finds and prints the largest prime factor of the number 612852475143, followed by a new line.
+- 101-print_number.c - a function that prints an integer.
